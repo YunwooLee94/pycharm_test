@@ -82,5 +82,6 @@ if __name__ == "__main__":
         c_vec2.affine_transform(c_rotation_matrix,c_translation_matrix)
         c_vec3.affine_transform(c_rotation_matrix,c_translation_matrix)
         triangle2DInstance = c_triangle2D([c_vec1.x,c_vec1.y,c_vec2.x,c_vec2.y,c_vec3.x,c_vec3.y])
+        triangle2DInstance.isRotated = True
         triangle2DInstance.drawTriangle()
     plt.show()
